@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- 꾸며주는 겹칠경우 순서가 중요하다. -->
+<html>
+<head>
+    <link rel="stylesheet" href="03mtstyle.css">
+    <style>
+        h1 {
+            text-decoration: underline;
+            
+        }
+        h1.error {
+            font-size: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- h1에 style이 들어있어서 우선수위로 5px가 적용되는거 위에 100px link에 적용된 값은
+    적용되지 않음 -->
+    <h1 style="font-size: 5px;" class="error">Lorem, ipsum dolor.</h1>
+</body>
+</html>
+<!-- internal 방식
+    inline 방식
+    external 방식 세가지 방식중 나중에 많은 코드를 유지보수 하기 위해서는 external방식
+그니까 link를 사용하는게 더 효율적이다. -->

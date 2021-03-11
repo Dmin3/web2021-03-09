@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* div 요소의 자식인 h1 요소
+        div > h1 */
+        div > h1 {
+            color: red;
+        }
+        /* 클래스가 note 요소의 자식인 p요소 */
+       .note > p {
+            text-decoration:underline
+        }
+        .error > h1 {
+            background-color: salmon;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <!-- div는 h1에 부모 , h1은 div에 자식 엘레먼트
+        div는 p에 부모 , p는 div에 자식
+    div와p는 형제 -->
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem, ipsum.</p>
+    </div>
+    
+    <div class="error">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <!--  -->
+</body>
+</html>

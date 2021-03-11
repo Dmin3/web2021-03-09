@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* id:100점
+        class:10점
+        elem:1점 */
+        /* 같은 점수일때 더 아래쪽에 있는거에 적용 */
+        h1 {
+            color: red;
+        }
+        .note {
+            color: yellow;
+        }
+        .special {
+            color: blue;
+        }
+        .note.special {
+            color: pink;
+        }
+        /* class를 두개 사용해서 20점 점수가 더 높아서 핑크로 적용 */
+        #header1 {
+            color: gray;
+        }
+        /* id가 점수가 가장 크므로 id로 적용되는거임 */
+
+    </style>
+</head>
+<body>
+    <h1 class="note">Lorem, ipsum.</h1>
+    <h1 class="note special">Totam, laboriosam.</h1>
+    <h1 id="header1" class="note special">Fugiat, placeat?</h1>
+    <h1>Maiores, nam!</h1>
+    <h1>Est, corrupti.</h1>
+</body>
+</html>

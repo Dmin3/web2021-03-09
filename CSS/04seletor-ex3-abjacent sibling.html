@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* 직전 형제가 h1인 p요소 맨위에 p만 블루가 됌 */
+        h1+p {
+            color:blue;
+        }
+        /* 이전에 div가 나왔는지 확인 그리고 div 밑으로 있는 p요소들 */
+        div ~ p.note {
+            color: seagreen;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p>Lorem, ipsum.</p>
+    <div>Lorem, ipsum dolor.</div>
+    <p class="note">Lorem, ipsum.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+</body>
+
+</html>
