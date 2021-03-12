@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    p {
+        font-size: 20px; 
+        /*  */
+    }
+    #percent {
+        font-size: 100%; 
+        /* body element 기준  */
+    }
+    .em {
+        font-size: 1em;
+        /* 1em = 100% 
+            0.5em = 50% */
+    }
+    .rem {
+        font-size: 0.75rem;
+    }
+</style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit.</p>
+<p id="percent">Lorem, ipsum.</p>
+<p class="em">Lorem, ipsum.</p>
+<div class="em">
+    <p class="em">Lorem, ipsum.</p>
+</div>
+
+<div class="rem">
+    <p class="rem">Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+</body>
+</html>

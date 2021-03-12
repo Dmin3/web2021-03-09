@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- border width 는 보더에 넒이 정의 해주는 프로퍼티 -->
+<html>
+<head>
+    <style>
+        p {
+            border-style: solid;
+        }
+        #para1 {
+            border-width: 0px;
+        }
+        #para2 {
+            border-width: 10px;
+        }
+        #para3 {
+            border-width: 20px;
+        }
+        #para4 {
+            /* 순서대로 위 오른쪽 아래 왼쪽 (시계방향) 보더의 넒이를 정할수 있음 */
+            border-width: 20px 10px 5px 0px;
+        }
+        #para5 {
+            /* 위 좌우 아래 (세개 일 경우) */
+            border-width: 20px 10px 5px;
+        }
+        #para6 {
+            /* 2개만 주면 상하 좌우 */
+            border-width: 20px 10px;
+        }
+        #para7 { 
+            /* 지정해서 정해주고 싶을때 */
+            border-left-width: 20px;
+            border-right-width: 10px;
+            border-bottom-width: 5px;
+            border-top-width: 8px;
+        }
+    </style>
+</head>
+<body>
+    <p id="para1">Lorem ipsum dolor sit amet.</p>
+    <p id="para2">Vel at perspiciatis obcaecati unde?</p>
+    <p id="para3">Voluptate quasi tempore consequatur optio!</p>
+    <p id="para4">Mollitia sapiente itaque ipsum ex!</p>
+    <p id="para5">Animi tenetur dicta eos aspernatur.</p>
+    <p id="para6">Lorem, ipsum.</p>
+    <p id="para7">Lorem, ipsum dolor.</p>
+</body>
+</html>
