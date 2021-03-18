@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+    <h1 class="header">Lorem.</h1>
+    <h1 class="header para">Exercitationem!</h1>
+    <h1 class="header para">Tempora?</h1>
+
+    <script>
+        var x = document.querySelector(".header");
+        // all가 다르게 하나만 선택해줌 맨위 첫번째 꺼만 선택해줌
+        console.log(x.innerHTML);
+        
+        var y = document.querySelector(".para");
+        console.log(y.innerHTML);
+        // para class 중에서 맨 첫번째 꺼만 선택해줌
+        var z = document.querySelector("h1:nth-child(3)");
+        // h1에 3번째 자식이라는 뜻
+        console.log(z.innerHTML);
+    </script>
+</body>
+</html>

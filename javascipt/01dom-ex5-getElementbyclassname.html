@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+    <h1 class="header">Lorem.</h1>
+    <h1 class="header para" >Error!</h1>
+    <h1 class="header para">Excepturi?</h1>
+
+    <script>
+        var elem1 = document.getElementsByClassName("header");
+
+        console.log(elem1[1].innerHTML);
+
+        var elem2 = document.getElementsByClassName("para");
+        console.log(elem2[0].innerHTML);
+        // 클래스로 분류 했지만 중복되는 부분이라면 console 에서는 같은
+        // 수식어로 보임
+    </script>
+
+    
+</body>
+</html>

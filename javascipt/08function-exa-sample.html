@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<input type="text" id="input1">
+<br>
+<input type="text" id="input2">
+<br>
+<button onclick="process()"><i class="fas fa-plus"></i></button>
+<br>
+<input type="text" id="result" readonly>
+
+<script>
+function process() {
+    var a = document.getElementById("input1");
+    var b = document.getElementById("input2");
+    var c = add(a, b); //add라는 함수가 없으니 add함수를 만들어보자!
+    document.getElementById("result").value = c;
+}
+
+function add(x, y){
+
+    return Number(x) + Number(y);
+}
+</script>
+</body>
+</html>

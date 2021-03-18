@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../css/all.min.css">
+<head>
+<style>
+</style>
+</head>
+<body>
+    <button onclick="changeImage(this)" id="button1">a</button>
+    <button onclick="changeImage(this)" id="button2">b</button>
+    <button onclick="changeImage(this)" id="button3">c</button>
+    <button onclick="changeImage(this)" id="button4">d</button>
+    <hr>
+    <img src="" alt="" id="img1">
+
+    <script>
+        function changeImage(elem) {
+            document.getElementById("img1").src = elem.innerHTML + ".png";
+        }
+    </script>
+</body>
+</html>

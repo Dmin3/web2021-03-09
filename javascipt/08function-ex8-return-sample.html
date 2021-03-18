@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<input onkeyup="callDouble()" type="text" id="input1">
+
+<p id="result"></p>
+
+<script>
+    function double(v) {
+        return v * 2; //오른쪽 값을처리해줌
+    }
+
+    function callDouble() {
+        var val = document.getElementById("input1").value;
+        var r = double(val);
+        document.getElementById("result").innerHTML = r;
+    }
+    //onclick은 마우스 클릭 이벤트이고 onkeyup은 키보드에서 손을 놓았을 때의 이벤트에요
+</script>
+</body>
+</html>
