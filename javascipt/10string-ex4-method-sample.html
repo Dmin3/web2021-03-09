@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<input type="text" id="input1">
+<br>
+<button onclick="set()">분리</button>
+<p>앞자리: <span id="span1"></span></p>
+<p>뒷자리: <span id="span2"></span></p>
+
+<script>
+    function set(){
+      var full = document.getElementById("input1").value;
+      var miuns = full.indexOf("-");
+      
+      var left = full.substring(0, miuns);
+      var right = full.substring(miuns + 1);  
+        document.getElementById("span1").innerHTML = left;
+        document.getElementById("span2").innerHTML = right;
+    }
+</script>
+</body>
+</html>

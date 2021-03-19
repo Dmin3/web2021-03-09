@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        var car = {
+
+            weight:800,
+            color: "white" 
+        }
+        console.log(car.weight);
+        console.log(car["weight"]); // 두개는 같은 값이다.
+
+        console.log(car.color);
+        console.log(car["color"]);
+
+        car["color"] = "red"; //white 였던 변수가 여기서 또 바뀜
+        console.log(car.color);
+        console.log(car["color"]);
+    </script>
+</body>
+</html>
