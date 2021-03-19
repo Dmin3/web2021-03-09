@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .static-elem {
+        width: 300px;
+        height: 200px;
+        border: 5px solid green;
+        position: static;
+        /* static은 이동하지 않는다 */
+        /* 위치 이동 
+        left,right,top,bottom*/
+        left: 200px;
+        /* 왼쪽에서 멀어지는거임 왼쪽으로 이동하는게 아니라  */
+        top: 200px;
+        /* 위에서 멀어진다는거임 아래에서 위로간다는게 아니라 */
+    }
+    .relative-elem {
+        width: 300px;
+        height: 200px;
+        border: 5px solid green;
+        position: relative;
+        /* 원래 배치되는곳 기준으로 위치를 이동시킴 */
+        /* 위치 이동 
+        left,right,top,bottom*/
+        left: 200px;
+        /* 왼쪽에서 멀어지는거임 왼쪽으로 이동하는게 아니라  */
+        top: 200px;
+        /* 위에서 멀어진다는거임 아래에서 위로간다는게 아니라 */
+    }
+    }
+    
+</style>
+</head>
+<body>
+
+
+    <div class="static-elem">
+        
+    </div>
+<hr>
+
+<div class="relative-elem"></div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    p:nth-child(1) {
+        background-color: blue;
+    }
+    /* 가로안에 몇번째 차일드인지 숫자를 결정해서 넣을수 있음.
+    p엘리먼트이면서 누군가에 첫번째 자식. */
+    p:nth-child(2) {
+        background-color: black;
+    }
+    p:nth-child(odd){
+        text-decoration: underline;
+    }
+    /* odd는 홀수 */
+    p:nth-child(even) {
+        font-weight: bold;
+    }
+    /* even은 짝수 */
+    table, th, td {
+        border: 1px solid black;
+    }
+    table {
+        width: 100%;
+    }
+    th, td {
+        height: 30px;
+    }
+    tr:nth-child(odd) {
+        background-color: #ccc;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <p>Lorem, ipsum.</p>
+        <p>Sapiente, aliquam!</p>
+        <p>Ad, consequatur?</p>
+        <p>Quasi, sed.</p>
+        <p>Iure, ducimus!</p>
+    </div>
+<table>
+    <tr>
+        <th>Lorem.</th>
+        <th>Ut!</th>
+        <th>Eius.</th>
+        <th>jinjki</th>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Quae.</td>
+        <td>Dolores?</td>
+        <td>Repudiandae.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Ullam.</td>
+        <td>Ipsum.</td>
+        <td>Incidunt.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Rem!</td>
+        <td>Repellendus?</td>
+        <td>Possimus.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Possimus.</td>
+        <td>Velit.</td>
+        <td>Dolorum.</td>
+    </tr>
+</table>
+</body>
+</html>
