@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../css/all.min.css">
+<head>
+<style>
+</style>
+</head>
+<body>
+<input type="text">
+<button onclick="add()"><i class="fas fa-plus"></i></button>
+
+<ul id="result"></ul>
+
+<script>
+    function add(){
+        var text = document.querySelector("input").value;
+        var ul = document.getElementById("result");
+        text = text.trim(); //빈 공백을 지워주는 명령어
+        if(!text){//!=""와 같다 빈 스트링이 아닐때만 출력!
+            ul.innerHTML += "<li>" + text + "</li>";
+        }
+        
+                     
+    }
+</script>
+</body>
+</html>
