@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<input type="text" id="input1" placeholder="출력할 단어를 입력해주세요">
+<br>
+<button onclick="x()">출력</button>
+
+<div id="result"></div>
+
+<script>
+    function x(){
+        var dan = document.getElementById("input1").value;
+        dan = Number(dan);
+        var txt = "";
+        for(i = 0; i <= 9; i++){
+        txt += dan + "X" + i + "=" + (dan * i) + "<br>";
+        
+        document.getElementById("result").innerHTML = txt;
+        }
+
+    }
+</script>
+</body>
+</html>
